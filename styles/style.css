@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');        /* Importa as fontes "Krona One" e "Montserrat" do Google Fonts */
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    /*height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+    /*margin: 0;/* Remove margens padrão*/
+    /*display: column; /* Define o corpo como um contêiner flexível */
+    /*justify-content: space-between; /* Centraliza horizontalmente os itens dentro do corpo */
+    /*align-items: center; /* Centraliza verticalmente os itens dentro do corpo */
+    /*width: 100%; /* Define a largura do corpo como 100% da largura da viewport */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura dos elementos */
+    background-color: var(--cor-primaria); /* Define a cor de fundo do corpo como preto */
+    color: var(--cor-secundaria) /* Define a cor do texto como um tom claro */
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+    /*display: flex;
+    gap: 80px; /* Define .cabecalho como um contêiner flexível */
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px; /* Define .cabecalho__menu como um contêiner flexível */
+    /*align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none; /* Remove o sublinhado dos links*/
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex; /* Define .apresentacao como um contêiner flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui os itens igualmente com espaço entre eles */
+    width: 50%;
+    /*max-width: 1200px; /* Define uma largura máxima para a apresentação*/
+}
+
+.apresentacao__conteudo {
+    width: 615px; /* Define a largura do conteúdo da apresentação */
+    display: flex; /* Define .apresentacao_conteudo como um contêiner flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    gap: 40px; /* Adiciona um espaço de 40px entre os itens */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem; /* Define o tamanho da fonte como 36px */
+    font-family: var(--fonte-primaria); /* Define a fonte como "Krona One", com fallback para sans-serif */
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria); /* Define a cor do texto como um tom de azul claro */
+    /*font-family: 'Krona One', sans-serif; /* Define a fonte como "Krona One", com fallback para sans-serif */
+    /*font-size: 2.5rem; /* Define o tamanho da fonte como 40px */
+    /*font-weight: 700; /* Define o peso da fonte como 700 (negrito) */
+    /*text-align: center; /* Centraliza o texto horizontalmente */
+    /*margin-bottom: 20px; /* Adiciona uma margem inferior de 20px */
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem; /* Define o tamanho da fonte como 24px */
+    font-family: var(--fonte-secundaria); /* Define a fonte como "Montserrat", com fallback para sans-serif */
+    /*display: flex; */
+}
+
+.apresentacao__links {
+    display: flex; /* Define .apresentacao__links como um contêiner flexível */
+    flex-direction: column;
+    justify-content: space-between; /* Distribui os itens igualmente com espaço entre eles */
+    align-items: center;
+    gap: 82px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    /* background-color: var(--cor-terciaria); */
+    display: flex; /* Define .apresentacao__links__link como um contêiner flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 16px; /* Adiciona um espaço de 16px entre os itens */
+    border: 2px solid var(--cor-terciaria); /*Define a largura e cor da borda do botão */
+    width: 50%; /* Define a largura como 280px */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    border-radius: 16px; /* Define bordas arredondadas com 16px */
+    font-size: 1.5rem; /* Define o tamanho da fonte como 24px */
+    font-weight: 600; /* Define o peso da fonte como 600 */
+    padding: 21.5px 0; /* Adiciona um preenchimento vertical de 21.5px e nenhum preenchimento horizontal */
+    text-decoration: none; /* Remove a decoração do texto (como sublinhado) */
+    color: var(--cor-secundaria); /* Define a cor do texto como preto */
+    font-family: var(--fonte-secundaria); /* Define a fonte como "Montserrat", com fallback para sans-serif */
+    /*align-items: center; /*Alinha os itens verticalmente ao centro*/
+}
+
+.apresentacao__links__link:hover {  /*estiliza o botão quando o mouse passar em cima*/
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente*/
+    gap: 50px; 
+    padding: 8px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 5%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction:column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
